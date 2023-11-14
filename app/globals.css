@@ -2,26 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+  .btn {
+    @apply rounded-xl bg-darker p-[9px]  text-xs text-white hover:bg-darker  sm:px-[20px] sm:py-[14px] xl:px-[40px] xl:text-sm;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .btn-transparent {
+    @apply bg-transparent;
+  }
+
+  .heading {
+    @apply relative p-2 text-center font-quat text-[32px] text-white;
+  }
+
+  .sub-text {
+    @apply text-[24px] leading-7 text-white lg:text-[32px] lg:leading-10;
+  }
+  .sub-text-2 {
+    @apply text-[20px];
+  }
+
+  .container {
+    @apply mx-auto  px-4 md:max-w-[1360px];
+  }
+
+  .form-control {
+    all: unset;
+    @apply mb-[20px] w-full bg-transparent px-[15px] py-[11px] text-[20px] placeholder:text-[20px] leading-5;
+    border-bottom: 1px solid #4b4b4b;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  margin: 32px auto 0 auto;
+  height: 1px;
+  width: 72px;
+  background: #4b4b4b;
+}
+
+.heading.line-white::after {
+  background: white;
+}
+.heading.left::after {
+  margin: 0;
+  margin-top: 32px;
+}
+
+.heroSection::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+}
+
+.section2-logo {
+  border-right: 1px solid #4b4b4b;
+  border-bottom: 1px solid #4b4b4b;
+}
+
+.section2-logo:nth-child(even) {
+  border-right: 0;
+}
+
+.section2-logo:nth-child(9),
+.section2-logo:nth-child(10) {
+  border-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .section2-logo:nth-child(even) {
+    border-right: 1px solid #4b4b4b;
+  }
+
+  .section2-logo:nth-child(n + 6) {
+    border-bottom: 0;
+  }
+  .section2-logo:nth-child(5),
+  .section2-logo:nth-child(10) {
+    border-right: 0;
+  }
+}
+
+.accordion .accordion-collapse {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+.accordion .accordion-collapse.show {
+  max-height: 500px;
+  transition: all 0.5s linear;
 }
