@@ -16,7 +16,13 @@ function Accordians() {
   return (
     <div className="accordion">
       {accordians.map((accor) => (
-        <div key={accor.title} className="accordion-item">
+        <div
+          key={accor.title}
+          className="accordion-item"
+          data-aos="fade-up"
+          data-delay="250"
+          data-aos-duration="450"
+        >
           <h2
             className="accordion-header cursor-pointer border-b-[1px] border-darker py-[20px] pr-[60px] font-quat text-[24px] md:text-[32px]"
             id="headingOne"

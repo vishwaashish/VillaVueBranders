@@ -1,76 +1,74 @@
 "use client";
-import Link from "next/link";
-import { useState } from "react";
-import { cn } from "..";
+
+import { ScrollLink } from "@/components/shared/aos";
 
 const navigationLink = [
   {
     label: "Home",
-    href: "#home",
+    href: "home",
+    offset: 0,
   },
   {
     label: "About",
-    href: "#about",
+    href: "about",
+    offset: 0,
   },
   {
     label: "Works",
-    href: "#works",
+    href: "works",
+    offset: -100,
   },
   {
     label: "Process",
-    href: "#process",
+    href: "process",
+    offset: 0,
   },
   {
     label: "Contact",
-    href: "#contact",
+    href: "contact",
+    offset: -100,
   },
 ];
 
 const Navbar = () => {
-  const [currentLink, setLink] = useState<string>("Home");
-
-  function handleClick(link: string) {
-    setLink(link);
-  }
   return (
     <>
-      <header className="fixed inset-x-0 z-50">
-        <div className="flex  justify-center px-[21px] sm:pt-[21px] sm:justify-between">
+      <header className="fixed inset-x-0 z-50    ">
+        <div className="flex  justify-center px-[21px] sm:justify-between sm:pt-[21px]">
           <div className="grow p-2 text-center font-quat text-3xl text-white sm:text-left   xl:w-[20%]">
             Well.<span className="font-dahlia">Designed</span>
           </div>
           <div className="hidden justify-center sm:flex xl:w-[60%]">
-            <Nav currentLink={currentLink} handleClick={handleClick} />
+            <Nav />
           </div>
           <div className="hidden w-[20%] justify-end xl:flex ">
-            <button className="flex h-full items-center rounded-2xl bg-dark px-4 py-2 text-sm text-white ">
+            <ScrollLink to="contact" className="flex h-full cursor-pointer items-center rounded-2xl bg-dark px-4 py-2 text-sm text-white ">
               <span className="mr-3 text-xl">🛎️</span>
               <span className="m-auto"> Enquiry</span>
-            </button>
+            </ScrollLink>
           </div>
         </div>
       </header>
       <div className="fixed inset-x-4 bottom-4 z-50 flex justify-center sm:hidden ">
-        <Nav currentLink={currentLink} handleClick={handleClick} />
+        <Nav />
       </div>
     </>
   );
 };
 
-function Nav({ currentLink, handleClick }: any) {
+function Nav() {
   return (
     <nav className=" flex gap-1 rounded-2xl  bg-dark px-[9px] py-[8px]  ">
       {navigationLink.map((link) => (
-        <button
+        <ScrollLink
           key={link.label}
-          className={cn(
-            " btn btn-transparent",
-            currentLink === link.label ? "bg-darker" : "",
-          )}
-          onClick={() => handleClick(link.label)}
+          to={link.href}
+          className={"btn btn-transparent cursor-pointer"}
+          activeClass="bg-darker"
+          offset={link.offset}
         >
           {link.label}
-        </button>
+        </ScrollLink>
       ))}
     </nav>
   );
