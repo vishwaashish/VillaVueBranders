@@ -24,7 +24,10 @@ function Accordians() {
           data-aos-duration="450"
         >
           <h2
-            className="accordion-header cursor-pointer border-b-[1px] border-darker py-[20px] pr-[60px] font-quat text-[24px] md:text-[32px]"
+            className={cn(
+              "accordion-header cursor-pointer border-b-[1px] border-darker py-[20px] pr-[35px] font-quat text-[24px] md:text-[32px]",
+              state === accor.title && "show",
+            )}
             id="headingOne"
             onClick={() => onClick(accor.title)}
           >

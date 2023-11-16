@@ -33,8 +33,8 @@ export default function Home() {
               CHANGE YOUR HOTEL OR VILLA INTO A UNIQUE BRAND THAT ATTRACTS
               THOUGHTS AND SENSE
             </h3>
-            <div className="btn mx-auto mt-[20px] w-[180px] cursor-pointer py-[16px] text-sm">
-              <ScrollLink className="w-full" to="contact">
+            <div className="btn mx-auto mt-[20px] w-[180px] cursor-pointer py-[16px] text-sm transition-transform duration-300 hover:scale-105">
+              <ScrollLink className="w-full " to="contact">
                 Send Enquiry
               </ScrollLink>
             </div>
@@ -149,13 +149,13 @@ export default function Home() {
           </p>
           <ScrollLink
             to="contact"
-            className=" mx-auto my-[30px]   "
+            className=" mx-auto my-[30px] w-full max-w-[320px] transition-transform duration-300 hover:scale-105  "
             data-aos="fade-up"
             data-delay="250"
             data-aos-duration="450"
           >
             <button
-              className="btn mx-auto w-full max-w-[320px] bg-white py-[20px] text-[14px] font-bold text-black"
+              className="btn mx-auto w-full max-w-[320px] bg-white py-[20px] text-[14px] font-bold text-black transition-transform duration-300 hover:scale-105  hover:bg-white"
               data-aos="fade-up"
               data-delay="250"
               data-aos-duration="450"
@@ -186,30 +186,35 @@ export default function Home() {
                 data-delay="250"
                 data-aos-duration="450"
               >
-                <div className="relative z-0 block aspect-video">
+                <div className="group relative z-0 block aspect-[16/12] overflow-hidden">
                   <Image
                     alt="blog"
                     src={item.backSrc}
-                    layout="fill"
+                    // layout="fill"
                     objectFit="cover"
-                    // width={500}
-                    // height={1000}
+                    width={500}
+                    height={500}
+                    className="h-full w-full  transition-transform duration-500 ease-in-out group-hover:scale-125"
                   ></Image>
 
                   <Image
                     alt="Gradient"
                     src={images.gradientBlack.src}
-                    layout="fill"
+                    // layout="fill"
                     objectFit="cover"
-                    objectPosition="bottom"
+                    width={500}
+                    height={500}
+                    className="absolute bottom-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-125"
                   ></Image>
 
                   <Image
                     alt="logo"
                     src={item.src}
-                    layout="fill"
+                    // layout="fill"
+                    width={500}
+                    height={500}
                     objectFit="contain"
-                    className="mx-auto max-w-[303px]"
+                    className="absolute inset-0  m-auto max-w-[250px] transition-transform duration-500 ease-in-out group-hover:scale-125"
                   ></Image>
                 </div>
                 <h1 className="relative z-10 mb-[25px] font-quat text-[24px]">

@@ -45,7 +45,7 @@ const Navbar = () => {
           <div className="hidden w-[20%] justify-end xl:flex ">
             <ScrollLink
               to="contact"
-              className="flex h-full cursor-pointer items-center rounded-2xl bg-dark px-4 py-2 text-sm text-white "
+              className="flex	 h-full cursor-pointer items-center rounded-2xl bg-dark px-4 py-2 text-sm text-white "
             >
               <span className="mr-3 text-xl">🛎️</span>
               <span className="m-auto"> Enquiry</span>
@@ -67,8 +67,8 @@ function Nav() {
         <ScrollLink
           key={link.label}
           to={link.href}
-          className={"btn btn-transparent cursor-pointer"}
-          activeClass="bg-darker"
+          className={"btn btn-transparent cursor-pointe"}
+          activeClass="bg-darker hover:bg-darker"
           offset={link.offset}
         >
           {link.label}
