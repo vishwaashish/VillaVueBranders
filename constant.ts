@@ -1,5 +1,5 @@
 export const images = {
-  heroBack: require("@/assets/images/batu.jpg").default,
+  heroBack: require("@/assets/images/batu1.jpg").default,
   gradientBack: require("@/assets/images/thegrad.png").default,
   gradientBlack: require("@/assets/images/hotel-bg.png").default,
   instagram: require("@/assets/images/in.svg").default,
@@ -38,7 +38,7 @@ export const conceptStudies = [
   {
     title: "HOOGA",
     description:
-      "Minimal design, a sense of earth, stone and wood, the presence of water and natural plants all together in perfect harmony makes for the warmest ambience.",
+      "The coziest atmosphere is created with minimal design, a feeling of earth, stone, and wood, as well as the harmonious presence of water and natural flora.",
     url: "#",
     src: require("@/assets/images/hooga-logo-x2.png").default,
     backSrc: require("@/assets/images/hooganew.png").default,
@@ -46,7 +46,7 @@ export const conceptStudies = [
   {
     title: "PELIVA",
     description:
-      "Built in a privileged location in the southern part of Pelion, in an old olive grove with an unparalleled view of the Pagasitic Gulf, Peliva Nature & Suites offers a high quality place to escape, relax and stay.",
+      "Built in a historic olive grove with an unmatched view of the Pagasitic Gulf in a prime location in the southern portion of Pelion, Peliva Nature & Suites provides an excellent spot to unwind and stay.",
     url: "#",
     src: require("@/assets/images/peliva-logo-x2.png").default,
     backSrc: require("@/assets/images/peliva.jpg").default,
@@ -54,7 +54,7 @@ export const conceptStudies = [
   {
     title: "BATU",
     description:
-      "In an enticing environment plunged into nature and sea, BATU has opened its doors to those who seek to combine the coveted peace of their holiday with comfort and discreet luxury.",
+      "Located in a charming setting surrounded by the sea and wildlife, BATU welcomes guests who wish to blend their holiday's much-desired tranquility with style and understated elegance.",
     url: "#",
     src: require("@/assets/images/batu-logo-x2.png").default,
     backSrc: require("@/assets/images/batu.jpg").default,
@@ -62,7 +62,7 @@ export const conceptStudies = [
   {
     title: "CASA COSTA",
     description:
-      "At the top of a small hill overlooking the Ionian Sea, you can find the elegant and peaceful Casa Costa.",
+      "The tasteful and serene Casa Costa is perched atop a little hill with a view of the Ionian Sea.",
     url: "#",
     src: require("@/assets/images/casacosta-logo-x2.png").default,
     backSrc: require("@/assets/images/casa-costa.jpg").default,
@@ -70,7 +70,7 @@ export const conceptStudies = [
   {
     title: "AIRIO",
     description:
-      "Welcome to AIRIO, your premier destination for exceptional hospitality in the heart of Athens, Greece.",
+      "Welcome to AIRIO, the best place to find outstanding hospitality in the center of Athens, Greece.",
     url: "#",
     src: require("@/assets/images/airio-logo-x2.png").default,
     backSrc: require("@/assets/images/airio.jpg").default,
@@ -78,7 +78,7 @@ export const conceptStudies = [
   {
     title: "DALUZ",
     description:
-      "daLUZ boutique hotel includes 35 luxurious rooms and suites that may each host 2 or more persons. The comfortable environment and its high aesthetics create the proper atmosphere for an ideal stay.",
+      "The daLUZ boutique hotel has 35 opulent rooms and suites that can accommodate two or more guests each. The ambiance is just right for the perfect stay thanks to the cozy setting and exquisite design.",
     url: "#",
     src: require("@/assets/images/daluz-logo-x2.png").default,
     backSrc: require("@/assets/images/daluz-social.jpg").default,
@@ -86,7 +86,7 @@ export const conceptStudies = [
   {
     title: "HOTEL BRETTANIA",
     description:
-      "For those who love comfortable travel experiences; for the genuine explorers of urban landscapes; for your business-as-always guests; and for those who are eager to roam the streets of a picturesque “old city”, there is just one destination for you: Brettania Hotel.",
+      "There is only one place to go whether you want cozy travel experiences, are an authentic urban explorer, are guests who are there on business, or are itching to explore the charming streets of a 'old city' the Brettania Hotel.",
     url: "#",
     src: require("@/assets/images/brettania-logo-x2.png").default,
     backSrc: require("@/assets/images/brettania.jpg").default,
@@ -95,7 +95,7 @@ export const conceptStudies = [
   {
     title: "BLUE LUXURY SUITES",
     description:
-      "Blue Luxury Suites, true to their name, invite you to indulge in comfort and accessible luxury. Experience unique aesthetics, abundant amenities, and an endless view of the “blue” – the Ambracian Gulf, Preveza Marina, and the Ionian Sea.",
+      "True to their name, Blue Luxury Suites provide an invitation for you to savor comfort and affordable luxury. Enjoy distinctive design, a wealth of facilities, and an unending vista of the 'blue'—the Ionian Sea, Preveza Marina, and the Ambracian Gulf.",
     url: "#",
     src: require("@/assets/images/blue-logo-x2.png").default,
     backSrc: require("@/assets/images/blue-luxury-suites.jpg").default,
@@ -103,7 +103,7 @@ export const conceptStudies = [
   {
     title: "OMNI HOUSE",
     description:
-      "Premium Class Apartment in Ioannina. OMNI HOUSE is a luxurious-minimal apartment in the Gianiotiko Saloni area and was designed to meet the needs of a couple or a small family.",
+      "An elegant apartment located in Ioannina. OMNI HOUSE is a posh-minimal apartment in the Gianiotiko Saloni neighborhood that is ideal for a small family or couple.",
     url: "#",
     src: require("@/assets/images/omni-logo-x3.png").default,
     backSrc: require("@/assets/images/omni-house.jpg").default,

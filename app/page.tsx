@@ -25,13 +25,13 @@ export default function Home() {
             backgroundImage: `url(${images.heroBack.src})`,
           }}
         >
-          <div className="mt-30 z-10 text-center text-white">
+          <div className="mt-30 z-10 text-center">
             <h1 className="font-quat text-[48px] leading-[58px] sm:mt-20  lg:text-[82px] lg:leading-[92px]">
               elevate your <span className="font-dahlia">hoteling</span>
             </h1>
-            <h3 className="mt-[20px] max-w-[700px] px-1 text-[24px]">
-              TRANSFORM YOUR HOTEL OR VILLA INTO A DISTINCTIVE BRAND THAT
-              CAPTURES HEARTS AND MINDS
+            <h3 className="mx-auto mt-[20px] max-w-[700px] px-1 text-[24px]">
+              CHANGE YOUR HOTEL OR VILLA INTO A UNIQUE BRAND THAT ATTRACTS
+              THOUGHTS AND SENSE
             </h3>
             <div className="btn mx-auto mt-[20px] w-[180px] cursor-pointer py-[16px] text-sm">
               <ScrollLink className="w-full" to="contact">
@@ -88,9 +88,9 @@ export default function Home() {
             data-delay="450"
             data-aos-duration="450"
           >
-            Welcome to iframe hospitality, your premier destination for
-            exceptional branding and web design tailored specifically for hotels
-            and villas in the captivating landscapes of Greece.
+            Hello and welcome to iframe Hospitality, your one-stop shop for
+            outstanding branding and website design made especially for Greek
+            hotels and villas.
           </p>
         </section>
 
@@ -116,10 +116,10 @@ export default function Home() {
               data-delay="250"
               data-aos-duration="450"
             >
-              A comprehensive brand identity for hotels encompasses various
-              elements that work together to create a consistent and memorable
-              representation of the property. Here are the key components
-              typically included in a branding identity package for hotels
+              A thorough brand identity for a hotel consists of a number of
+              components that come together to produce a recognizable and
+              consistent image of the establishment. These are the main elements
+              that are usually present in a hotel branding identity package.
             </p>
 
             <div className="m-auto grid max-w-xl grid-cols-2 gap-x-2 gap-y-4 sm:grid-cols-3">
@@ -138,26 +138,30 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-4 text-center ">
-          <p className="sub-text m-auto max-w-xl text-center">
-            <span data-aos="fade-up" data-delay="250" data-aos-duration="450">
-              Are you ready for a new{" "}
-            </span>
-            <br />
-            <span data-aos="fade-up" data-delay="250" data-aos-duration="450">
-              {" "}
-              Hotel Concept for your property?
-            </span>
-          </p>
-
-          <ScrollLink
-            to="contact"
-            className="btn my-[30px] w-full max-w-[320px] bg-white py-[20px] text-[14px] font-bold text-black"
+        <section className="flex flex-col justify-center px-4 text-center">
+          <p
+            className="sub-text m-auto max-w-xl text-center"
             data-aos="fade-up"
             data-delay="250"
             data-aos-duration="450"
           >
-            Send Enquiry
+            Are you prepared to embrace a fresh hotel concept for your property?
+          </p>
+          <ScrollLink
+            to="contact"
+            className=" mx-auto my-[30px]   "
+            data-aos="fade-up"
+            data-delay="250"
+            data-aos-duration="450"
+          >
+            <button
+              className="btn mx-auto w-full max-w-[320px] bg-white py-[20px] text-[14px] font-bold text-black"
+              data-aos="fade-up"
+              data-delay="250"
+              data-aos-duration="450"
+            >
+              Send Enquiry
+            </button>
           </ScrollLink>
         </section>
       </Element>
@@ -247,34 +251,35 @@ export default function Home() {
                 Contact Us
               </h2>
               <p className="sub-text-2 mt-[34px] max-w-[445px] text-light">
-                Let us be your creative partners on this journey, helping you
-                create an indelible mark on Greece&apos;s hospitality landscape.
+                Partner with us on this creative journey, and together,
+                let&apos;s leave an unforgettable mark on Greece&apos;s
+                hospitality landscape
               </p>
               <h2 className="sub-text-2 mb-[40px] mt-[74px] text-light">
                 CONTACT DETAILS
               </h2>
               <p className="leading-8">
-                Kristalli 3, 45444,
+                Antelope Valley, 95234,
                 <br />
-                Ioannina, Greece
+                Athens, Greece
                 <br />
-                +30 2651065744
+                +28 9739583212
                 <br />
-                info@welldesigned.gr
+                info@villavuebranders.com
                 <br />
               </p>
               <h2 className="sub-text-2 mb-[40px] mt-[74px] text-light">
                 FOLLOW US
               </h2>
 
-              <a className="flex gap-2" href="#" target="_blank">
+              <a className="mb-2 flex gap-2" href="#" target="_blank">
                 <Image
                   src={images.instagram}
                   alt="icon"
                   width={20}
                   height={20}
                 />
-                instagram.com/welldesigned__
+                instagram.com/villavuebranders
               </a>
               <a className="flex gap-2" href="#" target="_blank">
                 <Image
@@ -283,7 +288,7 @@ export default function Home() {
                   width={20}
                   height={20}
                 />
-                facebook.com/welldesigned.gr
+                facebook.com/villavuebranders
               </a>
             </div>
             <div className="relative float-right mt-[70px] md:mt-0 md:w-[59%]">
@@ -291,8 +296,9 @@ export default function Home() {
                 Enquiry Form
               </h2>
               <p className="sub-text-2 mt-[34px] max-w-[445px] text-light">
-                Let us be your creative partners on this journey, helping you
-                create an indelible mark on Greece&apos;s hospitality landscape.
+                Partner with us in crafting a distinctive mark on Greece&apos;s
+                hospitality landscape. Let our creativity be your guide on this
+                transformative journey.
               </p>
 
               <form
@@ -339,34 +345,22 @@ export default function Home() {
             BACK TO TOP
           </ScrollLink>
           <h2
-            className="mb-[50px] mt-[72px] px-4 text-center font-quat text-5xl md:text-[120px] lg:mt-[150px]  lg:text-[150px] xl:text-[220px]  "
+            className="wrap mb-[50px] mt-[72px] px-4 text-center font-quat text-5xl md:text-[120px] lg:mt-[150px]  lg:text-[150px] xl:text-[160px]  "
             data-aos="fade-up"
             data-delay="250"
             data-aos-duration="450"
           >
-            Well.<span className="font-dahlia">Designed</span>
+            VillaVue <span className="font-dahlia">Branders</span>
           </h2>
 
-          <div className="flex items-center  justify-between gap-2 text-sm">
-            <div id="copy1">
-              <span className="hoverable">
-                © Well.Designed 2023 &nbsp;&nbsp; | &nbsp;&nbsp;
-              </span>{" "}
-              <a className="hoverable" href="privacy/">
-                Privacy Policy
-              </a>
-            </div>
-            <div id="copy2" className="flex flex-wrap gap-2 ">
-              <span>POWERED BY</span>
-              <a className="hoverable" href="#" target="_blank">
-                <Image
-                  width={60}
-                  height={20}
-                  src={images.iframe.src}
-                  alt="icon"
-                />
-              </a>
-            </div>
+          <div className="flex items-center  justify-center gap-2 text-sm">
+            <span className="hoverable">
+              © VillaVue<span className="font-dahlia">Branders</span> 2023
+              &nbsp;&nbsp; | &nbsp;&nbsp;
+            </span>{" "}
+            <a className="hoverable" href="privacy/">
+              Privacy Policy
+            </a>
           </div>
         </Element>
       </section>
