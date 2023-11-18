@@ -23,7 +23,8 @@
   }
 
   .container {
-    @apply mx-auto  px-4 md:max-w-[1360px];
+    max-width: min(100% - 2rem, 1360px);
+    margin-inline: auto;
   }
 
   .form-control {

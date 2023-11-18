@@ -1,6 +1,4 @@
-"use client";
-
-import { ScrollLink } from "@/components/shared/aos";
+import { ScrollLink } from "@/components/Shared";
 
 const navigationLink = [
   {
@@ -35,10 +33,13 @@ const Navbar = () => {
     <>
       <header className="fixed inset-x-0 z-50    ">
         <div className="flex  justify-center px-[21px] sm:justify-between sm:pt-[21px]">
-          <div className="grow p-2 text-center font-quat text-3xl text-white sm:text-left   xl:w-[20%]">
+          <ScrollLink
+            to="home"
+            className=" cursor-hover grow p-2 text-center font-quat text-3xl text-white sm:text-left   xl:w-[20%]"
+          >
             VillaVue
             <span className="font-dahlia">Branders</span>
-          </div>
+          </ScrollLink>
           <div className="hidden justify-center sm:flex xl:w-[60%]">
             <Nav />
           </div>

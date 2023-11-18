@@ -19,7 +19,7 @@ export const AOSInit = () => {
 interface ScrollLinkProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   to: string;
-  children?: any
+  children?: any;
   className?: string;
   offset?: number;
   duration?: number;
@@ -35,6 +35,7 @@ export const ScrollLink: FC<ScrollLinkProps> = ({
 }) => {
   return (
     <Link
+      hashSpy={true}
       to={to}
       className={className}
       activeClass={activeClass}
@@ -42,6 +43,7 @@ export const ScrollLink: FC<ScrollLinkProps> = ({
       smooth={true}
       duration={duration}
       offset={offset}
+      href={to}
     >
       {children}
     </Link>
