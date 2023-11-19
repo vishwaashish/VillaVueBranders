@@ -87,26 +87,23 @@ export default function RootLayout({
           "bg-black text-[#212529]",
         )}
       >
-        <span className="hidden">
-          <AnimatedCursor
-          
-            innerSize={10}
-            outerSize={20}
-            innerScale={1}
-            outerAlpha={5}
-            innerStyle={{
-              backgroundColor: "rgb(255,255,255)",
-              mixBlendMode: "exclusion",
-            }}
-            outerStyle={{
-              mixBlendMode: "exclusion",
-              backgroundColor: "rgb(255,255,255)",
-            }}
-            clickables={["a", "p", "button", ".cursor-hover"]}
-          />
-        </span>
+        <AnimatedCursor
+          innerSize={10}
+          outerSize={20}
+          innerScale={1}
+          outerAlpha={5}
+          innerStyle={{
+            backgroundColor: "rgb(255,255,255)",
+            mixBlendMode: "exclusion",
+          }}
+          outerStyle={{
+            mixBlendMode: "exclusion",
+            backgroundColor: "rgb(255,255,255)",
+          }}
+          clickables={["a", "p", "button", ".cursor-hover"]}
+        />
         <Navbar />
-        {children}
+        {children}              
       </body>
     </html>
   );
