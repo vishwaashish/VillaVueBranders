@@ -1,7 +1,13 @@
 {
-  "name": "welldesignedclone",
+  "name": "villavuebranders",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://villavuebranders.vercel.app",
+  "author": "Ashishkumar Vishwakarma <vishwakarmaashish165@gmail.com>",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/vishwaashish/villavuebranders"
+  },
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
