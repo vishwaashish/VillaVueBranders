@@ -26,7 +26,7 @@ const Works = () => (
             >
               <div className="cursor-hover  group relative z-0 block aspect-[16/12] overflow-hidden">
                 <Image
-                  alt="blog"
+                  alt={item.title + " back"}
                   src={item.backSrc}
                   width="0"
                   height="0"
@@ -35,7 +35,7 @@ const Works = () => (
                 ></Image>
 
                 <Image
-                  alt="Gradient"
+                  alt={item.title + " gradient"}
                   src={images.gradientBlack.src}
                   width="0"
                   height="0"
@@ -44,7 +44,7 @@ const Works = () => (
                 ></Image>
 
                 <Image
-                  alt="logo"
+                  alt={item.title + " logo"}
                   src={item.src}
                   width="0"
                   height="0"

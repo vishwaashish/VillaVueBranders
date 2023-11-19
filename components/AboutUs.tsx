@@ -31,8 +31,7 @@ const AboutUs = () => (
                 className=" cursor-hover"
                 style={{ width: "100%", height: "auto", maxWidth: 200 }}
                 src={logo.src}
-                alt={logo}
-                
+                alt={'logos'}
               ></Image>
             </div>
           ))}
@@ -74,8 +73,7 @@ const AboutUs = () => (
             data-delay="250"
             data-aos-duration="450"
           >
-          <span className="cursor-hover">
-          Our Services</span>  
+            <span className="cursor-hover">Our Services</span>
           </h2>
 
           <p
